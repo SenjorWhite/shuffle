@@ -1,0 +1,17 @@
+{
+  "name": "shuffle",
+  "version": "1.0.0",
+  "description": "Input a single integer N. Output the integers 1..N in random order.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shuffle"
+  ],
+  "author": "Senjor",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
