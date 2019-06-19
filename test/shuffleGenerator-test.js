@@ -1,7 +1,7 @@
-const shuffle = require("../src/shuffle");
+const shuffle = require("../src/shuffleGenerator");
 const assert = require("assert");
 
-describe("Shuffle", () => {
+describe("Shuffle Generator", () => {
     describe("Input as 0", () => {
         let array = shuffle.generate(0);
         it("should be null", () => {

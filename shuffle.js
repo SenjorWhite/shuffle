@@ -1,4 +1,4 @@
-const shuffle = require("./src/shuffle");
+const shuffle = require("./src/shuffleGenerator");
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout
