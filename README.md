@@ -13,9 +13,9 @@ This program runs on the Node.js which version is upper than v11.14.0
 
 #### 2. Install Dependancies
 Switch folder into the root folder of the project.
-(The root folder is where you can see a package.json file inside it.)
+(The root folder is where you can find a package.json file inside it.)
 
-Run NPM install to install all the dependancies:
+Run NPM install command to install all the dependancies:
 ```
 npm install
 ```
@@ -48,35 +48,12 @@ Input any Non-Zero Positive Integer (e.g. 10):
 Then, you'll get a result shows similar with the result below.
 
 ```
+Please input an Integer (>0):10
 Output:
-[10,8,1,3,2,4,6,5,7,9]
+[5,9,3,7,4,10,6,2,1,8]
 ```
 
-## Test
-
-Run NPM test for Unit Test:
-```
-npm test
-```
-
-The output of test result should look like this:
-```
-Shuffle
-    Input as 0
-      √ should be null
-    Input as -1
-      √ should be null
-    Input as 1
-      √ should be [1]
-    Input as 10
-      √ should be 10 of its length
-      √ each number should be unique
-
-
-  5 passing (23ms)
-```
-
-## Bugs
+## BUGS
 
 When you find issues, please report them:
 * [Issues](https://github.com/SenjorWhite/shuffle/issues) - Shuffle Issues
