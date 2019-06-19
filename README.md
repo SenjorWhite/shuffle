@@ -78,6 +78,28 @@ e.g.
 5,2,6,8,3,10,4,7,1,9
 ```
 
+## Testing
+
+Run NPM test for Unit Testing:
+```
+npm test
+```
+
+The output of testing result should look like this:
+```
+Shuffle Generator
+    Input as 0
+      √ should be null
+    Input as -1
+      √ should be null
+    Input as 1
+      √ should be [1]
+    Input as 10
+      √ should be 10 of its length
+      √ each number should be unique
+  5 passing (23ms)
+```
+
 ## Algorithm
 
 It was designed with simple stack algorithm and build a new array by random popping out.
