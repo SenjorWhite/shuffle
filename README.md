@@ -78,7 +78,37 @@ e.g.
 5,2,6,8,3,10,4,7,1,9
 ```
 
-## BUGS
+## Algorithm
+
+It was designed with simple stack algorithm and build a new array by random popping out.
+
+If we pretend the input as 5.
+### 1. Create a new array as stack in a sequential order.
+[1,2,3,4,5]
+### 2. Pop out the number from the stack randomly and push the popped element to output array.
+#### 1) rand.pop => 2
+[1,3,4,5] => [2]
+#### 2) rand.pop => 5
+[1,3,4] => [2,5]
+#### 3) rand.pop => 1
+[3,4] => [2,5,1]
+#### 4) rand.pop => 3
+[4] => [2,5,1,3]
+#### 5) rand.pop => 4
+[] => [2,5,1,3,4]
+
+### Complexity
+#### Space: O(n)
+With each time it pops out from stack and pushes into output array,
+the sum of size of 2 stack-arrays always equal n.
+
+#### Time: O(n)
+Pop out will access the stack-side for n times, => O(n).
+Push will also access the output array for n times, => O(n).
+O(n) + O(n) = O(2n) = O(n).
+
+
+## Bugs
 
 When you find issues, please report them:
 * [Issues](https://github.com/SenjorWhite/shuffle/issues) - Shuffle Issues
