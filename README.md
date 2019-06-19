@@ -17,28 +17,20 @@ Switch folder into the root folder of the project.
 
 Run NPM install command to install all the dependancies:
 ```
-npm install
+> npm install
 ```
 
 ### Excuting Shuffle
-You can excute the Shuffle either by NPM command or NODE command:
+You can excute the Shuffle by NODE command:
 
-#### 1. Using NPM Command to Excute:
-This command must be excuting in the project folder.
-
+#### Using NODE Command to Excute:
 ```
-npm start
-```
-
-or
-#### 2. Using NODE Command to Excute:
-```
-node index.js
+> node shuffle
 ```
 
 ### Usage
 
-Excuting the Shuffle with either of the commands, you'll see an input notification shows up:
+Excuting the Shuffle with the command, you'll see an input notification shows up:
 
 ```
 Please input an Integer (>0):
@@ -51,6 +43,39 @@ Then, you'll get a result shows similar with the result below.
 Please input an Integer (>0):10
 Output:
 [5,9,3,7,4,10,6,2,1,8]
+```
+
+### Arguments
+
+Here has some arguments for configuring the output format and input format.
+
+* **-p** : Pure output, the result will be output without `Output:` prefix.
+e.g.
+```
+> node shuffle 10 -p
+[8,9,7,3,2,4,6,10,1,5]
+```
+* **-n** : no brackets, the result will be output without `[]` brackets.
+e.g.
+```
+> node shuffle 10 -n
+Output:
+6,7,8,1,9,2,4,5,3,10
+```
+
+* **{number}** : Passing the number into the program directly.
+e.g.
+```
+> node shuffle 10
+Output:
+[10,6,8,5,4,2,7,9,3,1]
+```
+
+#### You can also use multiple of them in one time with different order:
+e.g.
+```
+> node shuffle -p 10 -n
+5,2,6,8,3,10,4,7,1,9
 ```
 
 ## BUGS
