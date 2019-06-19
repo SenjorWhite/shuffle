@@ -4,14 +4,17 @@
   "description": "Input a single integer N. Output the integers 1..N in random order.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node node_modules/mocha/bin/mocha"
   },
   "keywords": [
     "shuffle"
   ],
   "author": "Senjor",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.11",
     "mocha": "^6.1.4"
   }
 }
