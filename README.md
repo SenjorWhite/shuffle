@@ -52,7 +52,31 @@ Output:
 [10,8,1,3,2,4,6,5,7,9]
 ```
 
-## BUGS
+## Test
+
+Run NPM test for Unit Test:
+```
+npm test
+```
+
+The output of test result should look like this:
+```
+Shuffle
+    Input as 0
+      √ should be null
+    Input as -1
+      √ should be null
+    Input as 1
+      √ should be [1]
+    Input as 10
+      √ should be 10 of its length
+      √ each number should be unique
+
+
+  5 passing (23ms)
+```
+
+## Bugs
 
 When you find issues, please report them:
 * [Issues](https://github.com/SenjorWhite/shuffle/issues) - Shuffle Issues
