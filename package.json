@@ -2,9 +2,9 @@
   "name": "shuffle",
   "version": "1.0.0",
   "description": "Input a single integer N. Output the integers 1..N in random order.",
-  "main": "index.js",
+  "main": "shuffle.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node shuffle.js",
     "test": "node node_modules/mocha/bin/mocha"
   },
   "keywords": [
